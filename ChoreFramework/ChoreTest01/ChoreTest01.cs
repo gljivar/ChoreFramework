@@ -16,5 +16,10 @@ namespace ChoreTest01
 
             return result;
         }
+
+        protected override void AddChoreParameters()
+        {
+            this.ChoreParameters.Add(new ChoreParameter<bool>() { DefaultValue = true, Value = true });
+        }
     }
 }

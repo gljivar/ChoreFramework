@@ -46,6 +46,16 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ChoreFramework.Utility\ChoreFramework.Utility.csproj">
+      <Project>{92FA8CB7-060F-4CE0-B297-FB4FB841D80A}</Project>
+      <Name>ChoreFramework.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ChoreTest01\ChoreTest01.csproj">
+      <Project>{86CB8D60-A075-4C00-9B79-37E5714C0DDF}</Project>
+      <Name>ChoreTest01</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
