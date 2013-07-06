@@ -8,7 +8,7 @@ namespace ChoreFramework.Utility.Classes.Base
 {
     public abstract class ChoreBase : IChore
     {
-        public virtual ChoreResult Run()
+        public virtual ChoreResult Run(ChoreParameters parameters)
         {
             throw new NotImplementedException();
         }
