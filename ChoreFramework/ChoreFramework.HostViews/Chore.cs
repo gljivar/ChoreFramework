@@ -2,17 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using ChoreFramework.Utility.Interfaces;
-using System.AddIn.Pipeline;
 
-namespace ChoreFramework.Utility.Classes.Base
+namespace ChoreFramework.HostViews
 {
-    [AddInBase]
-    public abstract class ChoreBase : ContractBase, IChore
+    public abstract class Chore
     {
         public List<IChoreParameter> ChoreParameters { get; set; }
 
-        public ChoreBase()
+        public Chore()
         {
             SetChoreParameters();
         }
@@ -33,6 +30,5 @@ namespace ChoreFramework.Utility.Classes.Base
         {
 
         }
-
     }
 }

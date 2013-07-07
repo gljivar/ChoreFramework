@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{92FA8CB7-060F-4CE0-B297-FB4FB841D80A}</ProjectGuid>
+    <ProjectGuid>{4F8EEB40-917A-4699-821D-2F6F7194F2D9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ChoreFramework.Utility</RootNamespace>
-    <AssemblyName>ChoreFramework.Utility</AssemblyName>
+    <RootNamespace>ChoreFramework.HostViews</RootNamespace>
+    <AssemblyName>ChoreFramework.HostViews</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -32,8 +32,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.AddIn" />
-    <Reference Include="System.AddIn.Contract" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -42,16 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Base\ChoreBase.cs" />
-    <Compile Include="Classes\Base\ChoreHostView.cs" />
-    <Compile Include="Classes\ChoreParameter.cs" />
-    <Compile Include="Classes\ChoreParameters.cs" />
-    <Compile Include="Classes\ChoreResult.cs" />
-    <Compile Include="Interfaces\IChoreParameter.cs" />
-    <Compile Include="Interfaces\IChore.cs" />
+    <Compile Include="Chore.cs" />
+    <Compile Include="ChoreParameter.cs" />
+    <Compile Include="ChoreParameters.cs" />
+    <Compile Include="ChoreResult.cs" />
+    <Compile Include="IChoreParameter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
