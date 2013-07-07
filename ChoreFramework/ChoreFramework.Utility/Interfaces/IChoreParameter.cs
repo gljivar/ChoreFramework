@@ -7,5 +7,6 @@ namespace ChoreFramework.Utility.Interfaces
 {
     public interface IChoreParameter
     {
+        string Name { get; set; }
     }
 }

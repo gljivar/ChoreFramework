@@ -19,7 +19,9 @@ namespace ChoreTest01
 
         protected override void AddChoreParameters()
         {
-            this.ChoreParameters.Add(new ChoreParameter<bool>() { DefaultValue = true, Value = true });
+            this.ChoreParameters.Add(new ChoreParameter<bool>() { Name = "bul", DefaultValue = true, Value = true });
+            this.ChoreParameters.Add(new ChoreParameter<string>() { Name = "databs", DefaultValue = "Database", Value = "Data base" });
+            this.ChoreParameters.Add(new ChoreParameter<int>() { Name = "Numbr", DefaultValue = 0, Value = 1 });
         }
     }
 }
